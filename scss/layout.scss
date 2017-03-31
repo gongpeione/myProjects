@@ -1,0 +1,20 @@
+$gap-tiny: .05rem;
+$gap-small: .1rem;
+$gap-middle: .2rem;
+$gap-large: .4rem;
+$gap-giant: .8rem;
+
+html,
+body {
+  font-size: 100px;
+  height: 100%;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+@for $i from 0 through 5 {
+  h#{$i + 1} { font-size: .3rem - ($i * .03); }
+}
