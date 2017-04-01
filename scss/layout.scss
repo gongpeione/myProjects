@@ -18,3 +18,14 @@ html {
 @for $i from 0 through 5 {
   h#{$i + 1} { font-size: .3rem - ($i * .03); }
 }
+
+@mixin card {
+  background: $white;
+  border-radius: .05rem;
+  box-shadow: 0 2px 10px 0 $shadow;
+  transition: box-shadow .2s ease-in-out;
+  padding: $gap-middle;
+  &:hover {
+    box-shadow: 0 10px 20px 0 $shadow;
+  }
+}
