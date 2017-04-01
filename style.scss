@@ -3,10 +3,13 @@
 @import "scss/layout";
 
 body {
+  background: $gray;
 }
 #project {
   font-size: .18rem;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 header {
   background: $white;
@@ -22,8 +25,8 @@ header {
   }
 }
 .content {
-  background: $gray;
   padding: $gap-large;
+  flex: 1;
   > p {
     color: $dark;
     text-align: center;
@@ -118,6 +121,34 @@ header {
   @media (max-width: 900px) {
     li {
       width: 50%;
+    }
+  }
+  @media (max-width: 600px) {
+    li {
+      width: 100%;
+    }
+    & {
+      padding-left: $gap-tiny;
+      padding-right: $gap-tiny;
+    }
+  }
+}
+.copyright {
+  text-align: center;
+  font-size: 0;
+  padding: $gap-large;
+  a {
+    color: $dark;
+    font-size: .14rem;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  span {
+    &:not(:last-child)::after {
+      content: '/';
+      margin: 0 $gap-tiny;
+      font-size: .14rem;
+      color: $dark
     }
   }
 }
