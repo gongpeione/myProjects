@@ -33,7 +33,7 @@ header {
     font-weight: 300;
   }
   .search {
-    width: 90%;
+    max-width: 12rem;
     margin: 0 auto;
     padding: $gap-small;
     .cover {
@@ -78,7 +78,7 @@ header {
   }
   ul {
     list-style: none;
-    width: 90%;
+    max-width: 12rem;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
@@ -94,7 +94,7 @@ header {
       @include card;
     }
     img {
-      width: .8rem;
+      width: .6rem;
       height: auto;
       margin-right: $gap-middle;
     }
@@ -106,10 +106,18 @@ header {
       color: $dark;
       font-size: .14rem;
       font-weight: 200;
+      margin: 0;
     }
     h3 {
       margin: 0;
-      font-weight: 400;
+      margin-bottom: $gap-small;
+      font-weight: 300;
+      font-size: .2rem;
+    }
+  }
+  @media (max-width: 900px) {
+    li {
+      width: 50%;
     }
   }
 }

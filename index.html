@@ -39,7 +39,7 @@
         <h1>Geeku Projects</h1>
     </header>
     <div class="content">
-        <p>this is a projects storage</p>
+        <p>这是一个杂乱的项目库</p>
         <div class="search">
             <div class="cover">
                 <div class="icon">
@@ -47,21 +47,17 @@
                         <path d="M44.2532456,42.7586414 L44.6273756,43.1327714 L57.6172812,56.122677 L58,56.5053958 L57.2345625,57.2708333 L56.8518437,56.8881146 L43.861938,43.8982089 L43.5204738,43.5567447 C41.3446954,45.7233241 38.3443634,47.0625 35.03125,47.0625 C28.3865741,47.0625 23,41.6759259 23,35.03125 C23,28.3865741 28.3865741,23 35.03125,23 C41.6759259,23 47.0625,28.3865741 47.0625,35.03125 C47.0625,37.9730787 46.0066559,40.6683019 44.2532456,42.7586414 Z" id="Combined-Shape" stroke="#A3AFB6" stroke-width="2" stroke-linecap="square" fill="none"></path>
                     </svg>
                 </div>
-                <input type="text" id="s" placeholder="Search project">
+                <input type="text" id="s" placeholder="Search project" v-model="searchStr">
             </div>
         </div>
-        <div class="list" v-for="(val, key) in lists">
-            <h2>{{key}}</h2>
+        <div class="list" v-for="(list, title) in listFilted">
+            <h2>{{title}}</h2>
             <ul>
-                <li v-for="item in val">
+                <li v-for="item in list" v-once>
                     <div class="cover">
-                        <div class="pic">
-                            <img :src="item.logo" alt="">
-                        </div>
+                        <div class="pic"><img :src="item.logo || 'avatar.png'" alt=""></div>
                         <div class="detail">
-                            <a :href="item.link">
-                                <h3>{{item.title}}</h3>
-                            </a>
+                            <a :href="item.link" target="_blank"><h3>{{item.title}}</h3></a>
                             <p>{{item.description}}</p>
                         </div>
                     </div>
@@ -72,67 +68,6 @@
 </div>
 
 <script src="//cdn.bootcss.com/vue/2.2.6/vue.min.js"></script>
-<script>
-    var list = [
-        {
-        	logo: 'avatar.png',
-            title: 'GMD',
-            description: 'A javascript markdown parser',
-            link: 'https://github.com/gongpeione/GMD'
-        },
-	    {
-		    logo: 'avatar.png',
-		    title: 'GMD',
-		    description: 'A javascript markdown parser',
-		    link: 'https://github.com/gongpeione/GMD'
-	    },
-	    {
-		    logo: 'avatar.png',
-		    title: 'GMD',
-		    description: 'A javascript markdown parser',
-		    link: 'https://github.com/gongpeione/GMD'
-	    },
-	    {
-		    logo: 'avatar.png',
-		    title: 'GMD',
-		    description: 'A javascript markdown parser',
-		    link: 'https://github.com/gongpeione/GMD'
-	    },
-	    {
-		    logo: 'avatar.png',
-		    title: 'GMD',
-		    description: 'A javascript markdown parser',
-		    link: 'https://github.com/gongpeione/GMD'
-	    },
-	    {
-		    logo: 'avatar.png',
-		    title: 'GMD',
-		    description: 'A javascript markdown parser',
-		    link: 'https://github.com/gongpeione/GMD'
-	    },
-	    {
-		    logo: 'avatar.png',
-		    title: 'GMD',
-		    description: 'A javascript markdown parser',
-		    link: 'https://github.com/gongpeione/GMD'
-	    },
-	    {
-		    logo: 'avatar.png',
-		    title: 'GMD',
-		    description: 'A javascript markdown parser',
-		    link: 'https://github.com/gongpeione/GMD'
-	    }
-    ]
-    new Vue({
-        el: '#project',
-        data: {
-        	test: 'test',
-            lists: {
-        		'Front-End': list,
-                'Back-End': list
-            }
-        }
-    });
-</script>
+<script src="main.js"></script>
 </body>
 </html>
