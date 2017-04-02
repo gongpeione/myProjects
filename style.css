@@ -371,13 +371,17 @@ textarea {
 html,
 body {
   font-size: 100px;
-  height: 100%; }
+  height: 100%;
+  font-family: 'Josefin Slab', BlinkMacSystemFont , "Segoe UI" , Roboto , "Segoe UI" , "Helvetica Neue", "PingFang SC", "Noto Sans" , "Noto Sans CJK SC" , "Microsoft YaHei", sans-serif; }
 
 html {
   box-sizing: border-box; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
+
+input {
+  font-family: 'Josefin Slab', BlinkMacSystemFont , "Segoe UI" , Roboto , "Segoe UI" , "Helvetica Neue", "PingFang SC", "Noto Sans" , "Noto Sans CJK SC" , "Microsoft YaHei", sans-serif; }
 
 h1 {
   font-size: 0.3rem; }
@@ -451,6 +455,7 @@ header {
       border: none;
       background: none;
       font-size: .2rem;
+      font-weight: 300;
       color: #96AFBD;
       outline: none; }
   .content h2 {
@@ -477,6 +482,8 @@ header {
     flex-wrap: wrap;
     padding: 0;
     margin: 0 auto; }
+  .content .detail {
+    width: 75%; }
   .content li {
     display: inline-block;
     width: 33.33%;
@@ -507,7 +514,10 @@ header {
       margin: 0;
       margin-bottom: 0.1rem;
       font-weight: 300;
-      font-size: .2rem; }
+      font-size: .2rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
   @media (max-width: 900px) {
     .content li {
       width: 50%; } }

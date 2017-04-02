@@ -3,17 +3,20 @@
 		{
 			"title": "GMD",
 			"description": "一个简单的MarkDown解析器",
-			"link": "https://github.com/gongpeione/GMD"
+			"link": "https://github.com/gongpeione/GMD",
+			"logo": "logo/gmd.svg"
 		},
 		{
-			"title": "GMD",
-			"description": "一个简单的MarkDown解析器",
-			"link": "https://github.com/gongpeione/GMD"
+			"title": "IFE 2017",
+			"description": "百度前端学院 IFE 2017",
+			"link": "https://gongpeione.github.io/ife2017"
 		}
 	],
 	"Back-End": [
 		{
-
+			"title": "IFE 2016 Spring Spider",
+			"description": "百度前端学院 2016 春爬虫，包括已爬完的数据库",
+			"link": "https://github.com/gongpeione/ife_2016_spring_spider"
 		}
 	]
 }

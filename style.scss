@@ -56,6 +56,7 @@ header {
       border: none;
       background: none;
       font-size: .2rem;
+      font-weight: 300;
       color: $dark;
       outline: none;
     }
@@ -87,6 +88,9 @@ header {
     padding: 0;
     margin: 0 auto;
   }
+  .detail{
+    width: 75%;
+  }
   li {
     display: inline-block;
     width: 33.33%;
@@ -116,6 +120,9 @@ header {
       margin-bottom: $gap-small;
       font-weight: 300;
       font-size: .2rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
   }
   @media (max-width: 900px) {

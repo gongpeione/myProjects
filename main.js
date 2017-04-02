@@ -1,7 +1,7 @@
 /**
  * Created by geeku on 01/04/2017.
  */
-const project = new Vue({
+new Vue({
 	el: '#project',
 	data: {
 		test: 'test',
