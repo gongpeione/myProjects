@@ -543,4 +543,12 @@ header {
     font-size: .14rem;
     color: #96AFBD; }
 
+.fade-enter-active, .fade-leave-active {
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: scale(1); }
+
+.fade-enter, .fade-leave-active {
+  transform: scale(0);
+  opacity: 0; }
+
 /*# sourceMappingURL=style.css.map */

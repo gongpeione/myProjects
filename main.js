@@ -4,7 +4,6 @@
 new Vue({
 	el: '#project',
 	data: {
-		test: 'test',
 		lists: {},
 		listKey: 0,
 		searchStr: ''
