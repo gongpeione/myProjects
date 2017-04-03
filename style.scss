@@ -50,6 +50,9 @@ header {
       width: .2rem;
       height: .2rem;
     }
+    .icon {
+      line-height: 0;
+    }
     input {
       flex: 1;
       margin-left: $gap-middle;
@@ -101,8 +104,8 @@ header {
       @include card;
     }
     img {
-      width: .6rem;
-      height: auto;
+      height: .6rem;
+      width: auto;
       margin-right: $gap-middle;
     }
     a {
@@ -114,6 +117,9 @@ header {
       font-size: .14rem;
       font-weight: 200;
       margin: 0;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
     h3 {
       margin: 0;
@@ -160,11 +166,36 @@ header {
   }
 }
 
+//#project {
+//  opacity: 1;
+//  transform: translateY(0);
+//}
+//#project[v-cloak] {
+//  transition: all .2s ease-in-out;
+//  opacity: 0;
+//  transform: translateY(2rem);
+//}
+
 .fade-enter-active, .fade-leave-active {
   transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transform: scale(1);
+  //animation: pop .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  //overflow: hidden;
 }
 .fade-enter, .fade-leave-active {
   transform: scale(0);
   opacity: 0;
 }
+//@keyframes pop {
+//  0% {
+//    transform: scale(1);
+//    opacity: 1;
+//  }
+//  50% {
+//    transform: scale(0);
+//    opacity: 0;
+//  }
+//  100% {
+//    width: 0%;
+//  }
+//}

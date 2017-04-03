@@ -12,14 +12,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-    <link rel="apple-touch-icon" href="avatar.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="avatar.png" sizes="120x120">
-    <link rel="apple-touch-icon" href="avatar.png" sizes="76x76">
-    <link rel="apple-touch-icon" href="avatar.png" sizes="60x60">
+    <link rel="apple-touch-icon" href="geeku.svg" sizes="152x152">
+    <link rel="apple-touch-icon" href="geeku.svg" sizes="120x120">
+    <link rel="apple-touch-icon" href="geeku.svg" sizes="76x76">
+    <link rel="apple-touch-icon" href="geeku.svg" sizes="60x60">
 
     <meta name="theme-color" content="#363d4c">
 
-    <link rel="shortcut icon" href="avatar.png" type="image/x-icon">
+    <link rel="shortcut icon" href="geeku.svg" type="image/x-icon">
     <link href="//fonts.lug.ustc.edu.cn/css?family=Josefin+Slab" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,7 +28,7 @@
 <div id="project">
     <header>
         <a href="#" class="">
-            <img src="avatar.png" alt="logo">
+            <img src="geeku.svg" alt="logo">
         </a>
         <h1>Geeku Projects</h1>
     </header>
@@ -44,17 +44,17 @@
                 <input type="text" id="s" placeholder="Search project" v-model="searchStr">
             </div>
         </div>
-        <div class="list" v-for="(list, title) in lists">
+        <div class="list" v-for="(list, title) in lists" v-cloak>
             <h2>{{title}}</h2>
             <ul>
-                <template v-for="item in list">
+                <template v-for="item in list" :key="item[title]">
                     <transition name="fade">
                         <li v-show="listFilted[title].indexOf(item) >= 0">
                             <div class="cover">
-                                <div class="pic"><img :src="item.logo || 'avatar.png'" alt=""></div>
+                                <div class="pic"><img :src="item.logo || 'geeku.svg'" alt=""></div>
                                 <div class="detail">
-                                    <a :href="item.link" target="_blank"><h3>{{item.title}}</h3></a>
-                                    <p>{{item.description}}</p>
+                                    <a :href="item.link" target="_blank" :title="item.title"><h3>{{item.title}}</h3></a>
+                                    <p :title="item.description">{{item.description}}</p>
                                 </div>
                             </div>
                         </li>

@@ -23,8 +23,8 @@ new Vue({
 			const filted = {};
 			Object.keys(this.lists).forEach(key => {
 				filted[key] = this.lists[key].filter(item => {
-					return item.title && item.title.indexOf(this.searchStr) >= 0 ||
-						item.description &&item.description.indexOf(this.searchStr) >= 0
+					return item.title && item.title.toLowerCase().indexOf(this.searchStr.toLowerCase()) >= 0 ||
+						item.description &&item.description.toLowerCase().indexOf(this.searchStr.toLowerCase()) >= 0
 				});
 			});
 			return filted;

@@ -449,6 +449,8 @@ header {
     .content .search svg {
       width: .2rem;
       height: .2rem; }
+    .content .search .icon {
+      line-height: 0; }
     .content .search input {
       flex: 1;
       margin-left: 0.2rem;
@@ -499,8 +501,8 @@ header {
       .content li .cover:hover {
         box-shadow: 0 10px 20px 0 rgba(189, 213, 221, 0.6); }
     .content li img {
-      width: .6rem;
-      height: auto;
+      height: .6rem;
+      width: auto;
       margin-right: 0.2rem; }
     .content li a {
       text-decoration: none;
@@ -509,7 +511,10 @@ header {
       color: #96AFBD;
       font-size: .14rem;
       font-weight: 200;
-      margin: 0; }
+      margin: 0;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
     .content li h3 {
       margin: 0;
       margin-bottom: 0.1rem;
