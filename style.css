@@ -489,7 +489,9 @@ header {
   .content li {
     display: inline-block;
     width: 33.33%;
-    padding: 0.1rem; }
+    padding: 0.1rem;
+    transition: transform .2s ease-in-out;
+    position: relative; }
     .content li .cover {
       display: flex;
       align-items: center;
@@ -507,6 +509,8 @@ header {
     .content li a {
       text-decoration: none;
       color: #42515A; }
+      .content li a:hover {
+        color: #75C8F7; }
     .content li p {
       color: #96AFBD;
       font-size: .14rem;
@@ -523,6 +527,29 @@ header {
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden; }
+    .content li .github {
+      position: absolute;
+      right: 0.1rem;
+      top: 0.1rem;
+      border-radius: 0 .05rem 0 0;
+      overflow: hidden;
+      transition: transform .2s ease-in-out; }
+      .content li .github:hover {
+        transform: translate(2px, -2px); }
+      .content li .github img {
+        margin: 0;
+        width: .4rem;
+        height: auto; }
+    .content li.popup {
+      z-index: 99; }
+      .content li.popup .cover {
+        box-shadow: 0 0 20px rgba(189, 213, 221, 0.6); }
+        .content li.popup .cover:hover {
+          box-shadow: 0 0 20px rgba(189, 213, 221, 0.6); }
+      .content li.popup p, .content li.popup h3 {
+        white-space: normal; }
+      .content li.popup .pic {
+        align-self: flex-start; }
   @media (max-width: 900px) {
     .content li {
       width: 50%; } }

@@ -98,6 +98,8 @@ header {
     display: inline-block;
     width: 33.33%;
     padding: $gap-small;
+    transition: transform .2s ease-in-out;
+    position: relative;
     .cover {
       display: flex;
       align-items: center;
@@ -111,6 +113,9 @@ header {
     a {
       text-decoration: none;
       color: $black;
+      &:hover {
+        color: $blue;
+      }
     }
     p {
       color: $dark;
@@ -129,6 +134,37 @@ header {
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
+    }
+    .github {
+      position: absolute;
+      right: $gap-small;
+      top: $gap-small;
+      border-radius: 0 .05rem 0 0;
+      overflow: hidden;
+      transition: transform .2s ease-in-out;
+      &:hover {
+        transform: translate(2px, -2px);
+      }
+      img {
+        margin: 0;
+        width: .4rem;
+        height: auto;
+      }
+    }
+    &.popup {
+      z-index: 99;
+      .cover {
+        box-shadow: 0 0 20px $shadow;
+        &:hover {
+          box-shadow: 0 0 20px $shadow;
+        }
+      }
+      p, h3 {
+        white-space: normal;
+      }
+      .pic {
+        align-self: flex-start;
+      }
     }
   }
   @media (max-width: 900px) {

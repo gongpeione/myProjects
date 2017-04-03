@@ -49,12 +49,17 @@
             <ul>
                 <template v-for="item in list" :key="item[title]">
                     <transition name="fade">
-                        <li v-show="listFilted[title].indexOf(item) >= 0">
+                        <li v-show="listFilted[title].indexOf(item) >= 0" @click.stop.capture="popup">
                             <div class="cover">
                                 <div class="pic"><img :src="item.logo || 'geeku.svg'" alt=""></div>
                                 <div class="detail">
-                                    <a :href="item.link" target="_blank" :title="item.title"><h3>{{item.title}}</h3></a>
+                                    <a :href="item.link" target="_blank" :title="item.title">
+                                        <h3 class="noPop">{{item.title}}</h3>
+                                    </a>
                                     <p :title="item.description">{{item.description}}</p>
+                                </div>
+                                <div class="github" v-if="item.github">
+                                    <a :href="item.github" target="_blank"><img src="github.svg" alt="" class="noPop"></a>
                                 </div>
                             </div>
                         </li>
