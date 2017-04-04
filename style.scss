@@ -213,12 +213,12 @@ header {
 //}
 
 .fade-enter-active, .fade-leave-active {
-  transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transform: scale(1);
   //animation: pop .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   //overflow: hidden;
 }
-.fade-enter, .fade-leave-active {
+.fade-enter, .fade-leave-to {
   transform: scale(0);
   opacity: 0;
 }
