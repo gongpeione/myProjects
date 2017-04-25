@@ -7,6 +7,11 @@
 			"logo": "logo/gmd.svg"
 		},
 		{
+			"title": "GeeRouter",
+			"description": "轻量前端路由",
+			"link": "https://github.com/gongpeione/GeeRouter"
+		},
+		{
 			"title": "IFE 2017",
 			"description": "百度前端学院 IFE 2017",
 			"link": "https://gongpeione.github.io/ife2017",

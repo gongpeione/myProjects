@@ -485,7 +485,8 @@ header {
     padding: 0;
     margin: 0 auto; }
   .content .detail {
-    width: 75%; }
+    width: 75%;
+    padding-right: 0.2rem; }
   .content li {
     display: inline-block;
     width: 33.33%;
