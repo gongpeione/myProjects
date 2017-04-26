@@ -9,7 +9,9 @@
 		{
 			"title": "GeeRouter",
 			"description": "轻量前端路由",
-			"link": "https://github.com/gongpeione/GeeRouter"
+			"link": "https://gongpeione.github.io/GeeRouter/example",
+			"logo": "logo/geerouter.svg",
+			"github": "https://github.com/gongpeione/GeeRouter"
 		},
 		{
 			"title": "IFE 2017",
