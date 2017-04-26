@@ -14,6 +14,13 @@
 			"github": "https://github.com/gongpeione/GeeRouter"
 		},
 		{
+			"title": "RightMenu",
+			"description": "简易自定义右键菜单",
+			"link": "https://gongpeione.github.io/rightMenu",
+			"logo": "logo/rightmenu.svg",
+			"github": "https://github.com/gongpeione/rightMenu"
+		},
+		{
 			"title": "IFE 2017",
 			"description": "百度前端学院 IFE 2017",
 			"link": "https://gongpeione.github.io/ife2017",
