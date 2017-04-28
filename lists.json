@@ -33,5 +33,20 @@
 			"description": "百度前端学院 2016 春爬虫，包括已爬完的数据库",
 			"link": "https://github.com/gongpeione/ife_2016_spring_spider"
 		}
+	],
+	"Don't Starve Together": [
+		{
+			"title": "DST-Docker",
+			"description": "用Docker搭建饥荒联机版服务器",
+			"link": "https://github.com/gongpeione/dst-server-docker",
+			"github": "https://github.com/gongpeione/dst-server-docker"
+		},
+		{
+			"title": "HoundAttack",
+			"description": "一个适用于饥荒联机版的猎狗袭击提醒Mod",
+			"link": "https://github.com/gongpeione/HoundAttack",
+			"github": "https://github.com/gongpeione/HoundAttack",
+			"logo": "logo/houndattack.png"
+		}
 	]
 }
