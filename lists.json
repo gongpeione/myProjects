@@ -25,6 +25,18 @@
 			"description": "百度前端学院 IFE 2017",
 			"link": "https://gongpeione.github.io/ife2017",
 			"github": "https://gongpeione.github.io/ife2017"
+		},
+		{
+			"title": "Oh My Canvas",
+			"description": "一些 canvas 练习",
+			"link": "https://gongpeione.github.io/oh-my-canvas/dist/",
+			"github": "https://github.com/gongpeione/oh-my-canvas"
+		},
+		{
+			"title": "GeeBlog",
+			"description": "基于 Vue 和 Github API 的博客",
+			"link": "https://code.geeku.net",
+			"github": "https://github.com/gongpeione/geblog"
 		}
 	],
 	"Back-End": [
