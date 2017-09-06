@@ -37,6 +37,12 @@
 			"description": "基于 Vue 和 Github API 的博客",
 			"link": "https://code.geeku.net",
 			"github": "https://github.com/gongpeione/geblog"
+		},
+		{
+			"title": "WBImg2WB",
+			"description": "根据微博图片地址推算上传图片的用户",
+			"link": "https://gongpeione.github.io/wbimg2wb/index.html",
+			"github": "https://github.com/gongpeione/wbimg2wb"
 		}
 	],
 	"Back-End": [
