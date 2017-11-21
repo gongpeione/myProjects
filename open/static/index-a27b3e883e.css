@@ -48,7 +48,8 @@
 }
 
 .mod-header-logo img {
-	display: block
+	display: block;
+	height: 32px;
 }
 
 .mod-header-nav {
