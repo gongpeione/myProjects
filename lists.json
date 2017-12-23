@@ -37,6 +37,18 @@
 			"description": "基于 Vue 和 Github API 的博客",
 			"link": "https://code.geeku.net",
 			"github": "https://github.com/gongpeione/geblog"
+		},
+		{
+			"title": "Quick-JS-OCR",
+			"description": "基于百度 OCR 的易用的在线 OCR",
+			"link": "https://gongpeione.github.io/quick-js-ocr/example/",
+			"github": "https://github.com/gongpeione/quick-js-ocr"
+		},
+		{
+			"title": "Emoji Table",
+			"description": "方便查阅 Emoji",
+			"link": "https://gongpeione.github.io/emoji-table/index.html",
+			"github": "https://github.com/gongpeione/emoji-table"
 		}
 	],
 	"Back-End": [
